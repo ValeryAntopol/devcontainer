@@ -11,3 +11,4 @@ COPY .devcontainer/.aux/persist_greetings.sh /persist_greetings.sh
 RUN cargo install marine mrepl cargo-generate
 
 RUN bash persist_greetings.sh /etc/bash.bashrc
+USER root
